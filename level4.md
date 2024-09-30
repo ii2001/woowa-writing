@@ -1,7 +1,3 @@
-# 알고리즘 기초
-
-- 목차
-
 # **⏰ Time Complexity (시간 복잡도)**
 
 > **Time Complexity (시간 복잡도)를 고려한 효율적인 알고리즘 구현 방법에 대한 고민과                   Big-O 표기법을 이용해 시간 복잡도를 나타내는 방법에 대해 알아봅시다.**
@@ -60,7 +56,7 @@ $$
 
 ## 예시
 
-!https://i0.wp.com/hanamon.kr/wp-content/uploads/2021/07/Big-O-Complexity-Chart.png?resize=1080%2C723&ssl=1
+![시간복잡도 그래프](https://github.com/user-attachments/assets/d73886e8-7a5c-43ed-a81d-08d45535421d)
 
 ---
 
@@ -80,7 +76,7 @@ print(result)  # Output: 2
 
 ```
 
-!https://i0.wp.com/hanamon.kr/wp-content/uploads/2021/07/O1.png?resize=1080%2C607&ssl=1
+![O1](https://github.com/user-attachments/assets/e2d9f565-d499-47a8-abc3-ac1d2e27dd8c)
 
 ---
 
@@ -101,7 +97,7 @@ def another_O_n_algorithm(n):
         pass
 ```
 
-!https://i0.wp.com/hanamon.kr/wp-content/uploads/2021/07/On.png?resize=1080%2C607&ssl=1
+![On](https://github.com/user-attachments/assets/80702e49-adfa-4c7b-a743-ae2a666a208c)
 
 ---
 
@@ -130,7 +126,7 @@ target = 5
 print(binary_search(arr, target))  # Output: 2 (index of target in arr)
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/c593cbe9-8387-4f29-a342-4b8065df533d/Untitled.png)
+![OlogN](https://github.com/user-attachments/assets/661711f1-e0fe-46f0-917d-1b06fe506f82)
 
 ---
 
@@ -157,7 +153,7 @@ def another_O_quadratic_algorithm(n):
 
 ---
 
-!https://i0.wp.com/hanamon.kr/wp-content/uploads/2021/07/On2.png?resize=1080%2C607&ssl=1
+![On^2](https://github.com/user-attachments/assets/4eb4e564-b839-41ce-a974-55a3388059fb)
 
 ### ❗️**O(2^n) - Exponential Time Complexity**
 
@@ -167,6 +163,7 @@ def another_O_quadratic_algorithm(n):
 **종이를 42번 접으면 그 두께가 지구에서 달까지의 거리보다 커진다는 이야기를 들어보신 적 있으신가?**
 
 **매번 접힐 때마다 두께가 2배 로 늘어나기 때문이다. 구현한 알고리즘의 시간 복잡도가 O(2^n)이라면 다른 접근 방식을 고민해 보는 것이….**
+<img width="461" alt="피보나치" src="https://github.com/user-attachments/assets/12a96578-1305-4ed5-94a0-63adaab42e92">
 
 ---
 
@@ -183,27 +180,20 @@ def another_O_quadratic_algorithm(n):
 
 그러나 이분 탐색은 계속해서 탐색 범위를 반으로 줄여나가기에 **`O(logN)`**으로 순차 탐색보다 빠르다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/b26b0aae-6119-4533-a6a5-19c4ac535748/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/0072d540-4a71-4e06-8829-ccb3c3b82a0a/Untitled.png)
+![OlogN2](https://github.com/user-attachments/assets/f0d0020c-b022-4787-842e-010531495e1c) ![y=x](https://github.com/user-attachments/assets/8ca4c932-0944-4810-8e19-3642cd84f393)
 
 ## 움짤로 보는 이분탐색 이해
 
-!https://blog.kakaocdn.net/dn/dQBBJU/btruNiQ0JE8/tfSQBmfafdqGq8OtfbtI70/img.gif
+![이분탐색](https://github.com/user-attachments/assets/79903930-3106-4823-96e9-7c789d274645)
 
 출처:&nbsp;https://blog.penjee.com/binary-vs-linear-search-animated-gifs/
 
 ## 그러면 천천히 순서로 자세히 봐보자!
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/2c4d00b8-debb-4289-8d0e-d0392facc7d2/Untitled.png)
-
-![스크린샷 2024-05-01 오전 12.57.59.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/0dfae6e2-44f5-4012-9f60-7a8cf6d514ee/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-05-01_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.57.59.png)
-
-![스크린샷 2024-05-01 오전 12.58.10.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/b4f6a14d-0b00-4123-a41b-c4ac6ec0bb40/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-05-01_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.58.10.png)
-
-![스크린샷 2024-05-01 오전 12.58.19.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/3f329685-87ae-438e-9d19-f7ef6c5d6053/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-05-01_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.58.19.png)
-
-![스크린샷 2024-05-01 오전 12.58.29.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/b92bbdec-d58d-4702-b173-86728bd2eb23/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-05-01_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.58.29.png)
+![이분탐색1](https://github.com/user-attachments/assets/ea00db10-2d03-4b16-a71b-0cb2a3fbed6a)
+![이분탐색2](https://github.com/user-attachments/assets/0f15662d-0aec-4ba7-a02b-bc88eebcd9d3)
+![이분탐색3](https://github.com/user-attachments/assets/218dcfe7-adfa-45e1-a2c1-cf4eeb0126d9)
+![이분탐색4](https://github.com/user-attachments/assets/824db0cb-f76f-4f50-8e0b-95acb926eb00)
+![이분탐색5](https://github.com/user-attachments/assets/c854d7ed-fb67-4de4-a8b7-4313d5ddca8a)
 
 ## 예시
 
@@ -266,13 +256,13 @@ https://www.acmicpc.net/problem/2805 - 나무 자르기
 
 여기서 가장 큰값을 얻게하는 길은?
 
-![그리디 1.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/01968bd7-f2bc-4590-8d1e-faacc5e79e3e/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%84%83%E1%85%B5_1.png)
+![그리디 1](https://github.com/user-attachments/assets/708bf42d-92da-4d55-a207-06edcd1c8c5a)
 
 아래처럼 `5` -> `7` -> `9` 로 거쳐가면 `21`이란 최댓값이 나옵니다.
 
 하지만 그리디 알고리즘은 어떻게 갈까요? 놀랍게도 매순간 선택지 중 가장 최적의 해만 고릅니다.
 
-![그리디 2.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/408f861a-089f-402d-9245-3878c07d66e6/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%84%83%E1%85%B5_2.png)
+![그리디 2](https://github.com/user-attachments/assets/dcaf4022-3f30-4f64-87b4-d9f798aaabd8)
 
 루트 노드 `5`에서 시작하여 `7`, `10`, `8` 중 가장 큰 `10`을 선택하고, `4`, `3` 중에 `4`를 선택합니다.
 
@@ -368,7 +358,7 @@ https://www.acmicpc.net/problem/2805 - 나무 자르기
 
 DP 알고리즘의 대표 문제는 **피보나치 수열** 문제가 있습니다.
 
-![피보나치.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/556309be-db7a-40bf-81a9-c6135721d498/%E1%84%91%E1%85%B5%E1%84%87%E1%85%A9%E1%84%82%E1%85%A1%E1%84%8E%E1%85%B5.png)
+<img width="461" alt="피보나치" src="https://github.com/user-attachments/assets/1b46d75b-748b-4504-b356-8076470e32b3">
 
 피보나치 수를 각각 구해보면 아래와 같습니다:
 
@@ -391,8 +381,8 @@ DP 알고리즘의 대표 문제는 **피보나치 수열** 문제가 있습니�
 
 피보나치 수열의 규칙을 다르게 나타내면 다음과 같습니다.
 
-![image (2).png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a6e4b0b0-76d6-46cb-99d7-f11f5d538ad4/78d59e55-be69-4677-86f2-7b332a287dce/image_(2).png)
-
+![image (2)](https://github.com/user-attachments/assets/1d65cc5b-4ee9-4a9b-805f-bde04b9e6531)
+ 
 ## 📌 동적 프로그래밍 종류
 
 피보나치 수열을 DP로 푸는 방법은 두가지가 있습니다. 동적 프로그래밍은 크게 "탑다운 방식(메모이제이션)"과 "바텀업 방식(테이블 사용)"으로 구현할 수 있습니다.
